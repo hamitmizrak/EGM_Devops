@@ -1,0 +1,9 @@
+git init
+git status
+git add .
+git commit -m "1.commit"
+git log
+git branch -M main
+git remote add origin1 https://github.com/hamitmizrak/EGM_Devops.git
+git remote
+git push -u origin1 master
