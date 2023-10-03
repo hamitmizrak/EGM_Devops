@@ -47,6 +47,8 @@ cat ~/..ssh/id_rsa.pub
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDA8V19xDZYWcQjIVvb5GxZW7w0y38ysHliTgNgCYYsX4KYcvNpuqNy0OFMYvBVdQWDCy8ugVRvkHi233sPJZ75Vm5WCmz1le6O/qQQGO8+xc7pO8IPmHeU3mgNSgCLavum1yzpPs3hDbQoUr2U9lLYKtRVaknGBPbMlWJGWSNi0c3E+ft0UdRcedQyorn/d4UwRJPkS4Q+nvx/oy2jSDq0NstzbXmkaH7yiy0+0wZ/fSWxPZ53owfO0xGg1+X9YFYpwI8LvLZezGy0AAFkj0901BPxMkFUcv9wNhVpw3nk1J/ui/K3S+IDZvjojqCWzRnlebqWfY0kGraB2cFuLRJBBub4vmLBAbyKcZwtHVkTd+VvhDPdJpl34LIG6oC/bmlsZIfyEHgA31O6pwoyub4F8DCi+NuD08svq5FF+/GOTH0topm59is1YwWvqwh0htKJxOg+k6C++L90EC7LqiBRApn/3xJKJ8U0KnZ+4+ZQsliIoaTKizqoVQZzixXcrU08rvCVt5yV2+rG5ypoJS+QYVXTDyc/1kHMrHkjyDJdMui1QUvb+BgFZUtS3FsapvtiU8CMzNANb3WFANrkxPgAyZqoc1wyp7EzjO8+RPPUHNdfjaAlngROVv4tPbiStd7umYeXk/kyUDPJ4nQS4W8UFVXFrkEdzF0KUpZDGzuMbQ== hamitmizrak@gmail.com
 
 -------------------------------------------------------------------------
+ADD 
+
 
 
 -------------------------------------------------------------------------
