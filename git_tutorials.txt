@@ -14,3 +14,29 @@ git push
 
 git commit -a -m "3.commit"
 git push
+
+-------------------------------------------------------------------------
+GUI:
+gitk
+
+-------------------------------------------------------------------------
+git remote 
+git remote -v 
+https://github.com/hamitmizrak/EGM_Devops.git
+
+-------------------------------------------------------------------------
+git --help
+git tag --help 
+-------------------------------------------------------------------------
+git config --global user.name
+git config --global user.name "Hamit Mizrak"
+git config --global user.email
+git config --global user.email "hamitmizrak@gmail.com"
+git config --global color.ui true
+git config --global core.editor notepad++
+git config --global --list
+git config --global -l
+git config --list
+git config  -l
+git config --global --edit 
+git config --global -e
