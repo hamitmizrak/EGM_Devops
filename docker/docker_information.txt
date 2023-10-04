@@ -1,0 +1,21 @@
+docker info 
+docker -v 
+docker version 
+docker --help
+docker container --help
+
+------------------------------------------------------------------
+
+docker pull nginx 
+docker pull alpine 
+docker pull centos 
+docker pull mysql 
+docker pull httpd 
+
+------------------------------------------------------------------
+
+docker search nginx 
+docker pull nginx:latest
+docker pull nginx
+docker image ls -a 
+docker container run -d -p 8080:80 nginx
