@@ -121,9 +121,11 @@ git add .
 git stash 
 git stash list
 git stash save "my_stash_name"
+
 git stash apply
 git stash apply stash@{2}
 git stash pop  =>  son stash çağır ve sil 
+
 git stash drop stash@{3}
 
 
