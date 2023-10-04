@@ -90,7 +90,7 @@ git commit -a -m "add yapmadan commit yap"
 git commit --amend -m "son committeki açıklama alanın içeriği değiştir"
 
 -------------------------------------------------------------------------
-DIFF 
+DIFF : iki yapı arasındaki farklar
 git log 
 64774d5b5e6728f3feb6eeabe2622bc6d7dc4419
 532e59bf78af9a39ba945d88e779616800267cfa
@@ -99,7 +99,7 @@ git difftool 532e59bf78af9a39ba945d88e779616800267cfa 64774d5b5e6728f3feb6eeabe2
 
 
 -------------------------------------------------------------------------
-.gitignore
+.gitignore: takip edilmesiini istemediğimizidosya evya dizinlerde
 # Git untracted
 secret.properties
 node_modules/
@@ -108,7 +108,7 @@ node_modules/
 
 
 -------------------------------------------------------------------------
-ALIAS
+ALIAS: uzun komutları kısatlmak için
 git config --global -e
 git config --global -l
 git log --decorate --oneline --graph --all 
@@ -116,6 +116,15 @@ git config --global alias.log2 "log --decorate --oneline --graph --all"
 git log2
 
 -------------------------------------------------------------------------
+STASH: commit yapmak istemiyorum ancak dosyalarımda kaybolması istemiyorum.
+git add .
+git stash 
+git stash list
+git stash save "my_stash_name"
+git stash apply
+git stash apply stash@{2}
+git stash pop  =>  son stash çağır ve sil 
+git stash drop stash@{3}
 
 
 -------------------------------------------------------------------------
