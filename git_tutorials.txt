@@ -249,10 +249,11 @@ git commit -m "squash sonrasında son bir kez daha commit hakkı doğdu"
 git log --decorate --oneline --graph --all 
 
 REBASE
+# 4.BRANCH (database)
 git add .
 git commit -m "branch öncesi"
 git push 
-# 4.BRANCH (database)
+
 git checkout -b database
 cat >> database.txt 
 git add .
@@ -267,7 +268,11 @@ git rebase database
 git log --decorate --oneline --graph --all 
 
 -------------------------------------------------------------------------
-
+-- CONFLICT : Çakışma
+git reset HEAD~1
+git add .
+git commit -m "conflict sonrası"
+git push -f
 
 -------------------------------------------------------------------------
 
