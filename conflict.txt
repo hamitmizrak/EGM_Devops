@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 MAIN PROJECT
+=======
+<<<<<<< HEAD
+CLONE PROJECT
+=======
+MAIN PROJECT
+>>>>>>> 7f9baa0d0b003f4fe16d9c10fd58699e5d5b434e
+>>>>>>> 3d3971a0bd3479281d7a3017e9a4f454dcc9a28a
 Conflict 
 git reset HEAD~1
 git add .
