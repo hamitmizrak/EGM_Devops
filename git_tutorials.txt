@@ -178,7 +178,81 @@ git switch master
 git tag -d v1.0.0
 
 -------------------------------------------------------------------------
+BRANCH :
+MERGE
+Fast-Forward 
+No Fast Forward 
+Squash 
 
+git add .
+git commit -m "branch öncesi"
+git push 
+
+git branch --help 
+git branch 
+git branch -l 
+git branch -a 
+git branch -r 
+
+# 1.BRANCH (Frontend)
+git branch frontend
+git checkout frontend
+cat >> frontend.txt 
+git add .
+git commit -m "frontend data"
+git remote 
+git push origin1 frontend
+
+git checkout master 
+git switch master 
+# fast forward 
+git merge frontend
+git log --decorate --oneline --graph --all 
+
+# 2.BRANCH (Backend)
+git checkout -b backend
+cat >> backend.txt 
+git add .
+git commit -m "backend data"
+git remote 
+git push origin1 backend
+
+git checkout master 
+git switch master 
+# no fast forward 
+git merge --no-ff backend
+git log --decorate --oneline --graph --all 
+
+# 3.BRANCH (Backend)
+git checkout -b webservices
+cat >> webservices.txt 
+git add .
+git commit -m "webservices data"
+git remote 
+git push origin1 webservices
+
+git checkout master 
+git switch master 
+# squash 
+git merge squash backend
+git commit -m "squash sonrasında son bir kez daha commit hakkı doğdu"
+git log --decorate --oneline --graph --all 
+
+
+REBASE
+# 4.BRANCH (database)
+git checkout -b database
+cat >> database.txt 
+git add .
+git commit -m "database data"
+git remote 
+git push origin1 database
+
+git checkout master 
+git switch master 
+# rebase 
+git rebase database
+git log --decorate --oneline --graph --all 
 
 -------------------------------------------------------------------------
 
