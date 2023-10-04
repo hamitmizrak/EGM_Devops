@@ -128,8 +128,21 @@ git stash pop  =>  son stash çağır ve sil
 
 git stash drop stash@{3}
 
-
 -------------------------------------------------------------------------
+PULL (Bütün komutlar hemen getirir) -FETCH (Dosyalar gelir ancak bizim local projemize eklenmez):
+git remote 
+git fetch origin 
+git fetch origin master
+git fetch origin main
+
+git branch -a ( Bütün local veya remote branchleri göster)
+git branch -r (  remote branchleri göster)
+
+git checkout remotes/origin/master ( Fetch gelen değeişikleri görmek)
+git checkout master
+
+git stash save "fetch_sonrası" 
+git merge origin/master  (Fetch'ten gelen verileri kendi bilgisayarıma alıyor)
 
 
 -------------------------------------------------------------------------
