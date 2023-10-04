@@ -195,6 +195,10 @@ git branch -a
 git branch -r 
 
 # 1.BRANCH (Frontend)
+git add .
+git commit -m "branch öncesi"
+git push 
+git status
 git branch frontend
 git checkout frontend
 cat >> frontend.txt 
@@ -210,6 +214,9 @@ git merge frontend
 git log --decorate --oneline --graph --all 
 
 # 2.BRANCH (Backend)
+git add .
+git commit -m "branch öncesi"
+git push 
 git checkout -b backend
 cat >> backend.txt 
 git add .
@@ -224,6 +231,9 @@ git merge --no-ff backend
 git log --decorate --oneline --graph --all 
 
 # 3.BRANCH (Backend)
+git add .
+git commit -m "branch öncesi"
+git push 
 git checkout -b webservices
 cat >> webservices.txt 
 git add .
@@ -239,6 +249,9 @@ git commit -m "squash sonrasında son bir kez daha commit hakkı doğdu"
 git log --decorate --oneline --graph --all 
 
 REBASE
+git add .
+git commit -m "branch öncesi"
+git push 
 # 4.BRANCH (database)
 git checkout -b database
 cat >> database.txt 
