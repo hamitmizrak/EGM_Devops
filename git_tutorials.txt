@@ -144,7 +144,6 @@ git checkout master
 git stash save "fetch_sonrası" 
 git merge origin/master  (Fetch'ten gelen verileri kendi bilgisayarıma alıyor)
 
-
 -------------------------------------------------------------------------
 
 
