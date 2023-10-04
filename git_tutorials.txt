@@ -145,7 +145,38 @@ git stash save "fetch_sonrası"
 git merge origin/master  (Fetch'ten gelen verileri kendi bilgisayarıma alıyor)
 
 -------------------------------------------------------------------------
+MAJOR MİNOR PATCH
+V1.   0.     0
+TAG
+git add .
+git commit -m "version 1 öncesi"
 
+git tag --help 
+git tag --list 
+git tag -l 
+
+cat >> tag1.txt 
+git tag v1.0.0
+git show v1.0.0
+git remote 
+origin1
+git push origin1 v1.0.0
+
+
+cat >> tag2.txt 
+git tag -a v2.0.0 -m "version v2.0.0"
+git show v2.0.0
+git remote 
+origin1
+git push origin1 v1.0.0
+
+git checkout v1.0.0
+git checkout master
+git switch master
+git checkout v2.0.0
+git switch master
+
+git tag -d v1.0.0
 
 -------------------------------------------------------------------------
 
