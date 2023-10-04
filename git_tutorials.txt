@@ -109,7 +109,11 @@ node_modules/
 
 -------------------------------------------------------------------------
 ALIAS
-git log 
+git config --global -e
+git config --global -l
+git log --decorate --oneline --graph --all 
+git config --global alias.log2 "log --decorate --oneline --graph --all"
+git log2
 
 -------------------------------------------------------------------------
 
