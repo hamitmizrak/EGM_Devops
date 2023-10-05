@@ -72,4 +72,10 @@ winpty docker container exec -it e97a8e7c9aa8a602038 bash
 docker container start -ai e97a8e7c9aa8a602038
 docker container start -ai containerNAME 
 
+-- EXAMPLES 
+winpty docker container run -it ubuntu bash 
+apt-get update && apt-get upgrade -y
+apt-get install curl 
+curl google.com 
+
 
