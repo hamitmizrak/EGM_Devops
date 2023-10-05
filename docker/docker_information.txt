@@ -22,8 +22,9 @@ docker container run -d -p 8080:80 nginx
 i7= 6 *2 =12 Logic Processors
 docker search nginx 
 docker pull nginx
-docker container run --detach --publish  8888:80 --name my_nginx --rm cpus="2" --cpuset="0,2" --memory=300m --memory-swap=450m nginx
-docker container run -d -p 8888:80 --name my_nginx --rm cpus="2" --cpuset="0,2" --memory=300m --memory-swap=450m nginx
+docker container run --detach --publish  8888:80 --name my_nginx --rm cpus="2" --cpuset-cpus="0,2" --memory=300m --memory-swap=450m nginx
+docker container run --detach --publish  8888:80 --name my_nginx --rm cpus=2  nginx
+docker container run -d -p 8888:80 --name my_nginx --rm cpus="2" --cpuset-cpus="0,2" --memory=300m --memory-swap=450m nginx
 
 -----------------------------------------------------------------
 --DELETE
@@ -55,4 +56,20 @@ docker logs -f containerID
 
 -----------------------------------------------------------------
 -- TERMINAL 
+docker container ps 
+docker container ls -al
+
+# Sıfırdan bir container oluştur ve ona terminalle bağlan
+docker container run -it nginx bash 
+winpty docker container run -it containerID bash 
+winpty docker container run -it e97a8e7c9aa8a602038 bash 
+
+# çalışan bir container bağlanmak
+docker container exec -it e97a8e7c9aa8a602038 bash 
+winpty docker container exec -it e97a8e7c9aa8a602038 bash 
+
+# Çalışmayan bir container bağlanmak istiyorsak
+docker container start -ai e97a8e7c9aa8a602038
+docker container start -ai containerNAME 
+
 
