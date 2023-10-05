@@ -72,10 +72,30 @@ winpty docker container exec -it e97a8e7c9aa8a602038 bash
 docker container start -ai e97a8e7c9aa8a602038
 docker container start -ai containerNAME 
 
--- EXAMPLES 
+-- EXAMPLES UBUNTU
 winpty docker container run -it ubuntu bash 
 apt-get update && apt-get upgrade -y
 apt-get install curl 
 curl google.com 
+
+-- EXAMPLES NGINX 
+docker search nginx 
+docker pull nginx:latest 
+docker image ls
+
+REPOSITORY   TAG       IMAGE ID       CREATED       SIZE  
+nginx        latest    61395b4c586d   2 weeks ago   187MB 
+
+docker container run -d -p 9999:80 --name my_nginx_terminal nginx
+docker ps 
+docker ls -al
+CONTAINER ID: aa4b16b7c545
+
+docker container exec -it aa4b16b7c545 bash 
+cat > /usr/share/nginx/html/index.html 
+Html kodlarını ekle
+exit
+docker container stop aa4b16b7c545
+docker container start aa4b16b7c545
 
 
