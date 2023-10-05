@@ -98,4 +98,12 @@ exit
 docker container stop aa4b16b7c545
 docker container start aa4b16b7c545
 
+--------------------------------------------------------------
+-- Container Information 
+-- TIS 
+docker ps 
+docker container top      aa4b16b7c545
+docker container inspect  aa4b16b7c545
+docker container stats    aa4b16b7c545
+
 
