@@ -26,6 +26,7 @@ docker container run --detach --publish  8888:80 --name my_nginx --rm cpus="2" -
 docker container run -d -p 8888:80 --name my_nginx --rm cpus="2" --cpuset="0,2" --memory=300m --memory-swap=450m nginx
 
 -----------------------------------------------------------------
+--DELETE
 docker container run -d -p 8888:80 --name data_science nginx
 docker container ls 
 docker container ls -al 
@@ -37,9 +38,13 @@ docker container rm -f data_science1
 docker container rm -f data_science1  data_science2 data_science3
 
 -----------------------------------------------------------------
+--START STOP PRUNE
 docker container run -d -p 7777:80 --name data_science --rm nginx
 
 docker container stop data_science
 docker container rm data_science data_science2 data_science3
 # kapatılmış containerleri siliyor
 dcoker container prune  
+
+-----------------------------------------------------------------
+LOGS
